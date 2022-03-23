@@ -1,0 +1,342 @@
+/*--------------------------------------------------------------
+                          Navigation Bar
+  --------------------------------------------------------------*/
+  @import url('https://fonts.googleapis.com/css?family=Open+Sans|Rock+Salt|Shadows+Into+Light|Cedarville+Cursive');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+.logo{
+    display: block;
+    text-align: center;
+    margin-top: -85px;
+    margin-left: -80px; 
+    height: 175px;    
+}
+.navbar{
+    display: block;
+    padding: 0;
+    height: 123px;
+}
+nav{
+    flex : 1;
+    margin-top: -125px; 
+    margin-left: auto; 
+    height: 123px;  
+}
+nav ul{
+    display : inline-flex;
+    list-style: none;
+    margin-left: 50px;
+    height: 123px; 
+}
+nav ul li{
+    display : inline-block;
+    margin-right: 100px;
+    height: 123px;
+}
+nav .left{
+    display : inline-block;
+    padding-left: 20px;
+    margin-right: 40px;
+    margin-top: 65px;
+    height: 123px; 
+}
+nav .right{
+    display : inline-block;
+    margin-right: 40px;
+    margin-top: 65px;
+    height: 123px;
+}
+a{
+    display: inline-block;
+    font-family: "Snell Roundhand", cursive;
+    font-size: 14px;
+    text-decoration: none;
+    color: #000000;
+    text-shadow: 1px 1px grey;  
+}
+a:hover{
+    display: block;
+    padding: 0px 0px 0px 10px;
+    color: grey;
+    text-shadow: 1px 1px black;
+    border-radius: 30px;
+}
+.divider{
+    display : inline-block;
+    padding: 235px;
+}
+.searchinput{
+    font-size: 15px;
+    text-align: center;
+    border-color: black;
+    padding: 0 25px;
+    width: 220px;
+    height: 25px;
+    border-radius:  25px 0 0 25px ;  
+}
+.searchbtn{
+    font-size:  15px;
+    font-family: "Snell Roundhand", cursive;
+    background-color: #c0c0c0;
+    position:relative;
+    border-radius: 0 25px 25px 0;
+    width: 100px;
+    height: 25px;
+    border-color: black;
+    cursor: pointer;
+}
+.search{
+    margin-top: -60px;
+    margin-left: 700px;
+}
+.container{
+    height: 180px;
+    max-width: 1300px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.navhr{
+    width: 100%;
+    height: 2px;
+    margin-top: -10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    border: 0 none; 
+}
+    /*--------------------------------------------------------------
+                                Body
+    --------------------------------------------------------------*/
+.content h1{
+    color: black;
+    font-family: 'Rock Salt', cursive;
+    font-size: 50px;
+    margin-top: auto;
+    margin-left: 250px; 
+}
+.imgMid{
+    width: 500px;
+    height: 250px;
+    margin-top: 0px;
+    margin-left: 350px;
+    box-shadow: 2px 2px 8px 5px grey;
+    border-radius: 10%;
+    animation:trsImgMid 1s;
+
+}
+@keyframes trsImgMid{
+    0%{
+        transform:translate(0px,-100px);
+    }
+    100%{
+        transform:translate(0px,0px);
+    }
+}
+.imgLeft{
+    width: 150px;
+    height: 250px;
+    margin-bottom: auto;
+    margin-left: -700px;
+    box-shadow: 2px 2px 8px 5px grey;
+    border-radius: 10%;
+    animation:trsImgLeft 1s;
+}
+@keyframes trsImgLeft{
+    0%{
+        transform:translate(-100px,0px);
+    }
+    100%{
+        transform:translate(0px,0px);
+    }
+}
+.imgRight{
+    width: 150px;
+    height: 250px;
+    margin-bottom: auto;
+    margin-left: 590px;
+    box-shadow: 2px 2px 8px 5px grey;
+    border-radius: 10%;
+    animation:trsImgRight 1s;
+}
+@keyframes trsImgRight{
+    0%{
+        transform:translate(100px,0px);
+    }
+    100%{
+        transform:translate(0px,0px);
+    }
+}
+.content h2{
+    color: black;
+    font-family: "Snell Roundhand", cursive;
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 400px; 
+    text-shadow: 2px 2px grey;
+    animation: contenth2 1s;
+}
+@keyframes contenth2{
+    0%{
+        transform:translate(0px,-100px);
+    }
+    100%{
+        transform:translate(0px,0px);
+    }
+}
+.shopbtn{
+    color: white;
+    font-size: 20px;
+    font-family:"Snell Roundhand", cursive;
+    background-color: black;
+    margin-top: 20px;
+    margin-left: 520px;
+    position:relative;
+    border-color: black;
+    border-radius: 25px 25px 25px 25px;
+    width: 150px;
+    height: 40px;
+    cursor: pointer;
+    animation: shopbtn 1s;
+}
+.shopbtn:hover{
+    display: block;
+    background-color: #c0c0c0;
+    color: black;
+}
+@keyframes shopbtn{
+    0%{
+        transform:translate(0px,-100px);
+    }
+    100%{
+        transform:translate(0px,0px);
+    }
+}
+    /*--------------------------------------------------------------
+                                Collection
+    --------------------------------------------------------------*/
+.sthr{
+    width: 50%;
+    height: 3px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    border: 0 none;   
+}
+.collection h1{
+    color: black;
+    font-family: "Snell Roundhand", cursive;
+    font-size: 25px;
+    margin-top: 30px;
+    margin-left: 535px; 
+    text-shadow: 2px 2px grey;
+}
+.Lcrown{
+    width: 100px;
+    height: auto;
+    margin-top: -60px;
+    margin-left: 150px;
+}
+.Rcrown{
+    width: 100px;
+    height: auto;
+    margin-top: -60px;
+    margin-left: 700px;
+}
+.collhr{
+    width: 50%;
+    height: 2.5px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: black;
+    border: 0 none; 
+}
+.collection h2{
+    color: black;
+    font-family: 'Rock Salt', cursive;
+    font-size: 50px;
+    margin-top: 120px;
+    margin-left: 600px; 
+}
+.firstColl{
+    width: 300px;
+    height: auto;
+    margin-top: -120px;
+    margin-left: 100px;
+    box-shadow: 2px 2px 8px 5px grey;
+    border-radius: 10%;
+}
+.collection h3{
+    color: black;
+    font-family: "Snell Roundhand", cursive;
+    font-size: 20px;
+    margin-top: -300px;
+    margin-left: 500px; 
+    text-shadow: 2px 2px grey;
+}
+.necklacebtn{
+    color: white;
+    font-size: 20px;
+    font-family:"Snell Roundhand", cursive;
+    background-color: black;
+    margin-top: 20px;
+    margin-left: 500px;
+    position:relative;
+    border-color: black;
+    border-radius: 25px 25px 25px 25px;
+    width: 170px;
+    height: 40px;
+    cursor: pointer;
+}
+.necklacebtn:hover{
+    display: block;
+    background-color: #c0c0c0;
+    color: black;
+}
+.secondColl{
+    width: 300px;
+    height: auto;
+    margin-top: 180px;
+    margin-left: 800px;
+    box-shadow: 2px 2px 8px 5px grey;
+    border-radius: 10%;
+}
+.collection h4{
+    color: black;
+    font-family: 'Rock Salt', cursive;
+    font-size: 50px;
+    margin-top: -430px;
+    margin-left: 120px; 
+}
+.collection h5{
+    color: black;
+    font-family: "Snell Roundhand", cursive;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 130px; 
+    text-shadow: 2px 2px grey;
+}
+.ringbtn{
+    color: white;
+    font-size: 20px;
+    font-family:"Snell Roundhand", cursive;
+    background-color: black;
+    margin-top: 20px;
+    margin-left: 130px;
+    position:relative;
+    border-color: black;
+    border-radius: 25px 25px 25px 25px;
+    width: 170px;
+    height: 40px;
+    cursor: pointer;
+}
+.ringbtn:hover{
+    display: block;
+    background-color: #c0c0c0;
+    color: black;
+}
+
